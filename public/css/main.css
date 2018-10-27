@@ -1,0 +1,152 @@
+/* resets css syling on margin & padding */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #EDF2F2;
+}
+
+.nav-bar {
+    background: #000;
+    display: flex;
+    padding: 16px;
+    font-family: sans-serif;
+    color: white;
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(92, 88, 92, 1);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(92, 88, 92, 1);
+    box-shadow: 0px 5px 5px 0px rgba(92, 88, 92, 1);
+
+
+}
+
+
+
+.nav-link-toggle {
+    display: none;
+}
+
+.nav-bar .home-link {
+    margin-top: 5px;
+    padding-top: 5px;
+    padding-left: 2rem;
+}
+
+.nav-bar-brand {
+    font-weight: 700;
+    padding-left: 20px;
+    font-size: 26px;
+
+    margin-right: 5px;
+    border-right: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav-bar .nav-links {
+    display: flex;
+
+
+
+}
+
+.nav-link {
+    padding-right: 2rem;
+    font-weight: 400;
+}
+
+.nav-items-right {
+    margin-left: auto;
+    padding-top: 7px
+}
+
+/***** Screen Resolution 576px or lower  *****/
+@media only screen and (max-width: 576px) {
+
+    .nav-bar .nav-bar-brand {
+        width: 10px;
+        
+    }
+
+  
+    .nav-bar .icon-link {
+       width: 10px;
+    }
+
+
+}
+
+
+/***** Screen Resolution 768px or lower  *****/
+@media only screen and (max-width: 768px) {
+
+
+    nav-bar-items,
+    .nav-bar {
+        flex-direction: column;
+    }
+
+    .nav-bar .nav-bar-brand {
+        float: left;
+        font-weight: 700;
+        padding-left: 20px;
+        font-size: 26px;
+        margin-right: 50%;
+        border: none;
+
+    }
+
+    .nav-bar .nav-bar-link-toggle {
+        align-self: flex-end;
+        display: initial;
+        position: absolute;
+      bottom: -100px;
+        cursor: pointer;
+
+    }
+
+
+    .nav-bar .home-link {
+        display: none;
+    }
+
+    .nav-bar-brand {
+        margin-right: 50%;
+    }
+
+    .nav-bar .nav-links {
+        display: none;
+    }
+
+    .nav-items-right {
+        margin-left: 0;
+    }
+}
+
+/***** Screen Resolutons 992px or lower  *****/
+@media only screen and (max-width: 992px) {
+
+    .nav-bar .nav-items-right {
+        display: none;
+    }
+
+    .nav-bar .icon-link {
+        display: inline;
+        padding-top: 5px;
+        margin-left: 30rem;
+    }
+
+    .nav-bar .nav-links {
+        position: absolute;
+        right: -200px;
+        background: green;
+        z-index: -1;
+    }
+
+    .nav-bar .nav-bar-link-toggle {
+        align-self: flex-end;
+        display: initial;
+        position: absolute;
+        cursor: pointer;
+    }
+
+}
